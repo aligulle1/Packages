@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-user-guide</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>mate-user-guide</Icon>
+        <IsA>library</IsA>
+        <Summary>This package contains documents which will be packaged together and
+shipped as mate-user-guide in the core MATE distribution</Summary>
+        <Description>This package contains documents which will be packaged together and
+shipped as mate-user-guide in the core MATE distribution.  They should 
+be documents targeted for end-users of MATE and have general MATE
+applicability.</Description>
+        <Archive sha1sum="8de19c7c5a98041f15219c814cc72ab94d79b0a1" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-user-guide-1.18.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mate-common</Dependency>
+            <Dependency>yelp-tools</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-user-guide</Name>
+        
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="desktop">/usr/share/applications/mate-user-guide.desktop
+</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
