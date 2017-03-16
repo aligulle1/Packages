@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "www.limelinux.com/standard/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-indicator-applet</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Lime GNU/Linux</Name>
+            <Email>admin@limelinux.com</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <License>LGPLv2+</License>
+        <IsA>library</IsA>
+        <Summary>Mate Configuration System</Summary>
+        <Description>A small applet to display information from various applications consistently in the panel. The indicator applet exposes Ayatana Indicators in the MATE Panel..</Description>
+        <Archive sha1sum="d47283f3c49aafc8bf092692b2034cf9bf71ce4d" type="tarxz">http://pub.mate-desktop.org/releases/1.18/mate-indicator-applet-1.18.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>mate-panel</Dependency>
+            <Dependency>libindicator</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-indicator-applet</Name>
+        <RuntimeDependencies>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>mate-panel</Dependency>
+            <Dependency>libindicator</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libX11</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/mate-panel</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+   <Update release="3">
+            <Date>2017-03-16</Date>
+            <Version>1.18.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Ali Murat Algül</Name>
+            <Email>alimuratgulle@limelinux.com</Email>
+        </Update>
+    </History>
+</PISI>
